@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <nav>
+        <p >Hello Everyone this is a tutorial</p>
+        <i class="fas  fa-bars" id="hidding"></i>
+        <aside class="hide" id="hidee">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </nav>
+    <p id="c">sahil</p>
+    <i class="fas fa-arrow-right" id="right" ></i>
+    <i class="fas fa-arrow-left" id="left"></i>
+
+    <div class="container">
+      <h1>Challange 1:age in days</h1>
+      <div class="container-1">
+          <button class="flex" onclick="final()">Click me</button>
+          <button class="fle" onclick="reset()">Reset</button>
+      </div>
+      <div id='ans'></div>
+      <h1>Challange 2: car generator</h1>
+      <div class="container-1">
+          <button class="flex" onclick="generate()">Generate</button>
+          <button class="fle" onclick="remove()">Remove</button>
+      </div>
+      <div id="generated"></div>
+      <h1>Challange 3: game</h1>
+      <div id="game">
+          <img src="rock.jpg" id="rock" onclick="rpsgame(this)">
+          <img src="paper.png" id="paper" onclick="rpsgame(this)">
+          <img src="scissors.jpg" id="scissors" onclick="rpsgame(this)">
+      </div>
+      <h1>Game:The black jack!!</h1>
+      <h1><span id="blackjack-result">Play</span></h1>
+      <div id="blackjack-container">
+          <div id="blackjack-player">
+              <h1>You:<span id="playerscore">0</span></h1>
+          </div>
+          <div id="blackjack-bot">
+              <h1>Dealer:<span id="botscore">0</span></h1>
+          </div>
+          <div id="blakjack-buttons-container">
+              <div id="blackjack-buttons">
+                  <button id="blackjack-hit" >Hit</button>
+                  <button id="blackjack-stand" >Stand</button>
+                  <button id="blackjack-deal" >Deal</button>
+              </div>
+          </div>
+         
+      </div>
+      <table   id="blackjack-table">
+        <th >Win</th>
+        <th>Losses</th>
+        <th>Tied</th>
+        </tr>
+        <tr>
+            <td id="blackjack-win">0</td>
+            <td id="blackjack-loss">0</td>
+            <td id="blackjack-tied">0</td>
+        </tr>
+    </table>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
